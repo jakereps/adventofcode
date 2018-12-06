@@ -1,7 +1,7 @@
 import sys
 
 if __name__ == "__main__":
-    with open("inputs.txt", "rt") as fh:
+    with open("input.txt", "rt") as fh:
         data = list(
             filter(
                 lambda line: line != "", map(lambda line: line.strip(), fh.readlines())
