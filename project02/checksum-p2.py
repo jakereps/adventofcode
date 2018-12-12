@@ -8,6 +8,7 @@ if __name__ == "__main__":
     combs = itertools.combinations(data, 2)
     for (x, y) in combs:
         if sum([bool(ord(i) ^ ord(j)) for i, j in zip(x, y)]) == 1:
-            # sets are unordered and advent order mattered, had to print and compare and remove the differing column
+            # sets are unordered and advent order mattered, had to print and
+            # compare and remove the differing column
             print(f"{x}\n{y}")
             sys.exit(0)
